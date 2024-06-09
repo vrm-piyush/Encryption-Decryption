@@ -1,9 +1,14 @@
 export function generateSecurePassword(length = 32) {
   const charset =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+[]{}|;:,.<>?";
+  const charsetArray = new Uint32Array(length);
+
+  // Generate secure random values
+  crypto.getRandomValues(charsetArray);
+
   let password = "";
   for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * charset.length);
+    const randomIndex = charsetArray[i] % charset.length;
     password += charset[randomIndex];
   }
   return password;
