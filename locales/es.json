@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Por favor ingrese el texto para cifrar.",
+    "maxInputLengthError": "El texto ingresado excede la longitud máxima permitida.",
+    "copyToClipboardError": "Copia fallida.",
+    "copyToClipboardEmptyError": "No hay texto disponible para copiar.",
+    "encryptionFailedError": "Falló el cifrado.",
+    "decryptionFailedError": "Falló el descifrado.",
+    "errorMessage": "Ocurrió un error: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "¡Cifrado exitoso!",
+    "decryptionSuccess": "¡Descifrado exitoso!",
+    "copyToClipboardSuccess": "¡Copiado al portapapeles!",
+    "successMessage": "¡Acción completada exitosamente!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Modo Oscuro",
+    "encryptButtonLabel": "Cifrar datos",
+    "decryptButtonLabel": "Descifrar datos",
+    "copyButtonLabel": "Copiar",
+    "enterDataLabel": "Ingrese datos para cifrar",
+    "mainHeading": "Cifrado y descifrado de datos con JavaScript",
+    "inputPlaceholder": "Escribe tus datos aquí...",
+    "processingMessage": "Procesando...",
+    "languageSelectorLabel": "Espanol"
+  }
+}

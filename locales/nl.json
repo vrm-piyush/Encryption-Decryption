@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Voer tekst in om te coderen.",
+    "maxInputLengthError": "Invoertekst overschrijdt de maximaal toegestane lengte.",
+    "copyToClipboardError": "Kopiëren mislukt.",
+    "copyToClipboardEmptyError": "Geen tekst beschikbaar om te kopiëren.",
+    "encryptionFailedError": "Codering mislukt.",
+    "decryptionFailedError": "Decodering mislukt.",
+    "errorMessage": "Er is een fout opgetreden: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Codering succesvol!",
+    "decryptionSuccess": "Decryptie succesvol!",
+    "copyToClipboardSuccess": "Gekopieerd naar klembord!",
+    "successMessage": "Actie succesvol voltooid!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Donkere modus",
+    "encryptButtonLabel": "Gegevens coderen",
+    "decryptButtonLabel": "Gegevens decoderen",
+    "copyButtonLabel": "Kopiëren",
+    "enterDataLabel": "Voer gegevens in om te coderen",
+    "mainHeading": "Gegevenscodering en decodering met JavaScript",
+    "inputPlaceholder": "Typ hier uw gegevens...",
+    "processingMessage": "Bezig met verwerken...",
+    "languageSelectorLabel": "Nederlands"
+  }
+}

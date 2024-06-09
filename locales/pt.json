@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Por favor, insira o texto para criptografar.",
+    "maxInputLengthError": "O texto de entrada excede o comprimento máximo permitido.",
+    "copyToClipboardError": "Falha na cópia.",
+    "copyToClipboardEmptyError": "Nenhum texto disponível para copiar.",
+    "encryptionFailedError": "Falha na criptografia.",
+    "decryptionFailedError": "Falha na descriptografia.",
+    "errorMessage": "Ocorreu um erro: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Criptografia bem-sucedida!",
+    "decryptionSuccess": "Descriptografia bem-sucedida!",
+    "copyToClipboardSuccess": "Copiado para a área de transferência!",
+    "successMessage": "Ação concluída com sucesso!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Modo Escuro",
+    "encryptButtonLabel": "Criptografar dados",
+    "decryptButtonLabel": "Descriptografar dados",
+    "copyButtonLabel": "Copiar",
+    "enterDataLabel": "Insira os dados para criptografar",
+    "mainHeading": "Criptografia e descriptografia de dados com JavaScript",
+    "inputPlaceholder": "Digite seus dados aqui...",
+    "processingMessage": "Processando...",
+    "languageSelectorLabel": "Português"
+  }
+}

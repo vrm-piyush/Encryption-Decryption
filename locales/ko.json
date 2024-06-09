@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "암호화할 텍스트를 입력하세요.",
+    "maxInputLengthError": "입력 텍스트가 허용되는 최대 길이를 초과합니다.",
+    "copyToClipboardError": "복사에 실패했습니다.",
+    "copyToClipboardEmptyError": "복사할 수 있는 텍스트가 없습니다.",
+    "encryptionFailedError": "암호화에 실패했습니다.",
+    "decryptionFailedError": "암호해독에 실패했습니다.",
+    "errorMessage": "오류가 발생했습니다: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "암호화에 성공했습니다!",
+    "decryptionSuccess": "암호해독에 성공했습니다!",
+    "copyToClipboardSuccess": "클립보드에 복사되었습니다!",
+    "successMessage": "작업이 성공적으로 완료되었습니다!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "어두운 모드",
+    "encryptButtonLabel": "데이터 암호화",
+    "decryptButtonLabel": "데이터 암호화 해제",
+    "copyButtonLabel": "복사",
+    "enterDataLabel": "암호화할 데이터를 입력하세요",
+    "mainHeading": "JavaScript를 사용한 데이터 암호화 및 복호화",
+    "inputPlaceholder": "여기에 데이터를 입력하세요...",
+    "processingMessage": "처리 중...",
+    "languageSelectorLabel": "한국어"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Wprowadź tekst do zaszyfrowania.",
+    "maxInputLengthError": "Wprowadzony tekst przekracza maksymalną dozwoloną długość.",
+    "copyToClipboardError": "Kopiowanie nie powiodło się.",
+    "copyToClipboardEmptyError": "Brak tekstu do skopiowania.",
+    "encryptionFailedError": "Szyfrowanie nie powiodło się.",
+    "decryptionFailedError": "Odszyfrowanie nie powiodło się.",
+    "errorMessage": "Wystąpił błąd: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Szyfrowanie powiodło się!",
+    "decryptionSuccess": "Odszyfrowanie powiodło się!",
+    "copyToClipboardSuccess": "Skopiowano do schowka!",
+    "successMessage": "Akcja zakończona pomyślnie!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Tryb ciemny",
+    "encryptButtonLabel": "Szyfruj dane",
+    "decryptButtonLabel": "Odszyfruj dane",
+    "copyButtonLabel": "Kopiuj",
+    "enterDataLabel": "Wprowadź dane do zaszyfrowania",
+    "mainHeading": "Szyfrowanie i deszyfrowanie danych za pomocą JavaScript",
+    "inputPlaceholder": "Wpisz tutaj swoje dane...",
+    "processingMessage": "Przetwarzanie...",
+    "languageSelectorLabel": "Polski"
+  }
+}

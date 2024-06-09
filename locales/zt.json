@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "請輸入要加密的文字。",
+    "maxInputLengthError": "輸入文字超過允許的最大長度。",
+    "copyToClipboardError": "複製失敗。",
+    "copyToClipboardEmptyError": "沒有可複製的文字。",
+    "encryptionFailedError": "加密失敗。",
+    "decryptionFailedError": "解密失敗。",
+    "errorMessage": "發生錯誤：{{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "加密成功！",
+    "decryptionSuccess": "解密成功！",
+    "copyToClipboardSuccess": "複製到剪貼簿！",
+    "successMessage": "操作成功完成！"
+  },
+  "labels": {
+    "darkModeToggleLabel": "深色模式",
+    "encryptButtonLabel": "加密資料",
+    "decryptButtonLabel": "解密資料",
+    "copyButtonLabel": "複製",
+    "enterDataLabel": "輸入要加密的資料",
+    "mainHeading": "使用 JavaScript 進行資料加密與解密",
+    "inputPlaceholder": "在此輸入您的資料...",
+    "processingMessage": "正在處理...",
+    "languageSelectorLabel": "繁體中文"
+  }
+}

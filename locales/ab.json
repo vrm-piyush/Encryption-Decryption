@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "الرجاء إدخال النص للتشفير.",
+    "maxInputLengthError": "النص المدخل يتجاوز الحد الأقصى للطول المسموح به.",
+    "copyToClipboardError": "فشلت عملية النسخ.",
+    "copyToClipboardEmptyError": "لا يوجد نص متاح للنسخ.",
+    "encryptionFailedError": "فشل التشفير.",
+    "decryptionFailedError": "فشل فك التشفير.",
+    "errorMessage": "حدث خطأ: {{خطأ}}"
+  },
+  "success": {
+    "encryptionSuccess": "تم التشفير بنجاح!",
+    "decryptionSuccess": "تم فك التشفير بنجاح!",
+    "copyToClipboardSuccess": "تم النسخ إلى الحافظة!",
+    "successMessage": "تم الإجراء بنجاح!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "الوضع الداكن",
+    "encryptButtonLabel": "تشفير البيانات",
+    "decryptButtonLabel": "فك تشفير البيانات",
+    "copyButtonLabel": "نسخ",
+    "enterDataLabel": "أدخل البيانات للتشفير",
+    "mainHeading": "تشفير البيانات وفك تشفيرها باستخدام JavaScript",
+    "inputPlaceholder": "اكتب بياناتك هنا...",
+    "processMessage": "جاري المعالجة...",
+    "languageSelectorLabel": "العربية"
+  }
+}

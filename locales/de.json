@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Bitte geben Sie den zu verschlüsselnden Text ein.",
+    "maxInputLengthError": "Eingabetext überschreitet die maximal zulässige Länge.",
+    "copyToClipboardError": "Kopieren fehlgeschlagen.",
+    "copyToClipboardEmptyError": "Kein Text zum Kopieren verfügbar.",
+    "encryptionFailedError": "Verschlüsselung fehlgeschlagen.",
+    "decryptionFailedError": "Entschlüsselung fehlgeschlagen.",
+    "errorMessage": "Es ist ein Fehler aufgetreten: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Verschlüsselung erfolgreich!",
+    "decryptionSuccess": "Entschlüsselung erfolgreich!",
+    "copyToClipboardSuccess": "In die Zwischenablage kopiert!",
+    "successMessage": "Aktion erfolgreich abgeschlossen!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Dunkler Modus",
+    "encryptButtonLabel": "Daten verschlüsseln",
+    "decryptButtonLabel": "Daten entschlüsseln",
+    "copyButtonLabel": "Kopieren",
+    "enterDataLabel": "Geben Sie die zu verschlüsselnden Daten ein",
+    "mainHeading": "Datenverschlüsselung und -entschlüsselung mit JavaScript",
+    "inputPlaceholder": "Geben Sie hier Ihre Daten ein …",
+    "processingMessage": "Wird verarbeitet…",
+    "languageSelectorLabel": "Deutsch"
+  }
+}

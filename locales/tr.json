@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Lütfen şifrelenecek metni girin.",
+    "maxInputLengthError": "Giriş metni izin verilen maksimum uzunluğu aşıyor.",
+    "copyToClipboardError": "Kopyalama başarısız oldu.",
+    "copyToClipboardEmptyError": "Kopyalanacak metin yok.",
+    "encryptionFailedError": "Şifreleme başarısız oldu.",
+    "decryptionFailedError": "Şifre çözme başarısız oldu.",
+    "errorMessage": "Bir hata oluştu: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Şifreleme başarılı!",
+    "decryptionSuccess": "Şifre çözme başarılı!",
+    "copyToClipboardSuccess": "Panoya kopyalandı!",
+    "successMessage": "İşlem başarıyla tamamlandı!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Karanlık Mod",
+    "encryptButtonLabel": "Verileri Şifrele",
+    "decryptButtonLabel": "Verilerin Şifresini Çöz",
+    "copyButtonLabel": "Kopyala",
+    "enterDataLabel": "Şifrelenecek Veriyi Girin",
+    "mainHeading": "JavaScript ile Veri Şifreleme ve Şifre Çözme",
+    "inputPlaceholder": "Verilerinizi buraya yazın...",
+    "processingMessage": "İşleniyor...",
+    "languageSelectorLabel": "Türkçe"
+  }
+}

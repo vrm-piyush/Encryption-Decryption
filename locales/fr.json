@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Veuillez saisir le texte à chiffrer.",
+    "maxInputLengthError": "Le texte saisi dépasse la longueur maximale autorisée.",
+    "copyToClipboardError": "La copie a échoué.",
+    "copyToClipboardEmptyError": "Aucun texte disponible à copier.",
+    "encryptionFailedError": "Le cryptage a échoué.",
+    "decryptionFailedError": "Le décryptage a échoué.",
+    "errorMessage": "Une erreur s'est produite : {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Cryptage réussi !",
+    "decryptionSuccess": "Déchiffrement réussi !",
+    "copyToClipboardSuccess": "Copié dans le presse-papier !",
+    "successMessage": "Action terminée avec succès !"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Mode sombre",
+    "encryptButtonLabel": "Chiffrer les données",
+    "decryptButtonLabel": "Déchiffrer les données",
+    "copyButtonLabel": "Copier",
+    "enterDataLabel": "Entrer les données à chiffrer",
+    "mainHeading": "Cryptage et décryptage des données avec JavaScript",
+    "inputPlaceholder": "Tapez vos données ici...",
+    "processingMessage": "Traitement...",
+    "languageSelectorLabel": "Français"
+  }
+}

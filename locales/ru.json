@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Пожалуйста, введите текст для шифрования.",
+    "maxInputLengthError": "Вводимый текст превышает максимально допустимую длину.",
+    "copyToClipboardError": "Не удалось скопировать.",
+    "copyToClipboardEmptyError": "Нет текста для копирования.",
+    "encryptionFailedError": "Ошибка шифрования.",
+    "decryptionFailedError": "Не удалось расшифровать.",
+    "errorMessage": "Произошла ошибка: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Шифрование успешно!",
+    "decryptionSuccess": "Дешифрование успешно!",
+    "copyToClipboardSuccess": "Скопировано в буфер обмена!",
+    "successMessage": "Действие успешно завершено!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Темный режим",
+    "encryptButtonLabel": "Зашифровать данные",
+    "decryptButtonLabel": "Расшифровать данные",
+    "copyButtonLabel": "Копировать",
+    "enterDataLabel": "Введите данные для шифрования",
+    "mainHeading": "Шифрование и дешифрование данных с помощью JavaScript",
+    "inputPlaceholder": "Введите сюда свои данные...",
+    "processingMessage": "Обработка...",
+    "languageSelectorLabel": "Русский"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "Please enter text to encrypt.",
+    "maxInputLengthError": "Input text exceeds maximum allowed length.",
+    "copyToClipboardError": "Copy failed.",
+    "copyToClipboardEmptyError": "No text available to copy.",
+    "encryptionFailedError": "Encryption failed.",
+    "decryptionFailedError": "Decryption failed.",
+    "errorMessage": "An error occurred: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "Encryption successful!",
+    "decryptionSuccess": "Decryption successful!",
+    "copyToClipboardSuccess": "Copied to clipboard!",
+    "successMessage": "Action completed successfully!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "Dark Mode",
+    "encryptButtonLabel": "Encrypt Data",
+    "decryptButtonLabel": "Decrypt Data",
+    "copyButtonLabel": "Copy",
+    "enterDataLabel": "Enter Data to Encrypt",
+    "mainHeading": "Data Encryption and Decryption with JavaScript",
+    "inputPlaceholder": "Type your data here...",
+    "processingMessage": "Processing...",
+    "languageSelectorLabel": "English"
+  }
+}

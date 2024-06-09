@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "enterDataError": "暗号化するテキストを入力してください。",
+    "maxInputLengthError": "入力テキストが最大許容長を超えています。",
+    "copyToClipboardError": "コピーに失敗しました。",
+    "copyToClipboardEmptyError": "コピーできるテキストがありません。",
+    "encryptionFailedError": "暗号化に失敗しました。",
+    "decryptionFailedError": "復号化に失敗しました。",
+    "errorMessage": "エラーが発生しました: {{error}}"
+  },
+  "success": {
+    "encryptionSuccess": "暗号化が成功しました!",
+    "decryptionSuccess": "復号化に成功しました!",
+    "copyToClipboardSuccess": "クリップボードにコピーされました!",
+    "successMessage": "アクションは正常に完了しました!"
+  },
+  "labels": {
+    "darkModeToggleLabel": "ダークモード",
+    "encryptButtonLabel": "データを暗号化する",
+    "decryptButtonLabel": "データを復号化",
+    "copyButtonLabel": "コピー",
+    "enterDataLabel": "暗号化するデータを入力してください",
+    "mainHeading": "JavaScript を使用したデータの暗号化と復号化",
+    "inputPlaceholder": "ここにデータを入力します...",
+    "processingMessage": "処理中...",
+    "languageSelectorLabel": "日本語"
+  }
+}

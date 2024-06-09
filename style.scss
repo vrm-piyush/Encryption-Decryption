@@ -1,0 +1,571 @@
+$primary-color: #007bff;
+$secondary-color: #444;
+$tertiary-color: #e8e8e8;
+$text-color-dark: #ddd;
+$text-color-light: #333;
+$error-color: #ff0000;
+$success-color: #28a745;
+
+@mixin transition($properties...) {
+  transition: $properties;
+  -webkit-transition: $properties;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222;
+  color: $text-color-dark;
+  @include transition(background-color 00.3s, color 00.3s);
+
+  &.dark-mode {
+    background-color: #222;
+    color: $text-color-dark;
+  }
+
+  &.light-mode {
+    background-color: #f5f5f5;
+    color: $text-color-light;
+  }
+}
+
+.container {
+  max-width: 80%;
+  padding: 40px;
+  background-color: $secondary-color;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  text-align: center;
+  @include transition(background-color 0.3s, box-shadow 0.3s);
+
+  display: block;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center contents vertically */
+
+  &.dark-mode {
+    background-color: #444;
+  }
+
+  &.light-mode {
+    background-color: #fff;
+  }
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+}
+
+h1 {
+  text-align: center;
+  color: $text-color-dark;
+  @include transition(color 0.3s);
+
+  &.dark-mode {
+    color: $text-color-dark;
+  }
+
+  &.light-mode {
+    color: $text-color-light;
+  }
+}
+
+label[for="input"] {
+  display: block;
+  margin-bottom: 10px;
+
+  &.dark-mode {
+    color: $text-color-dark;
+  }
+
+  &.light-mode {
+    color: $text-color-light;
+  }
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background-color: $secondary-color;
+  color: $text-color-dark;
+  resize: vertical;
+  @include transition(border-color 0.3s, background-color 0.3s, color 0.3s);
+
+  &.dark-mode {
+    background-color: $secondary-color;
+    color: $text-color-dark;
+  }
+
+  &.light-mode {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &::placeholder {
+    color: #888;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+button {
+  padding: 12px 24px;
+  margin-right: 10px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  @include transition(background-color 0.3s, color 0.3s, transform 0.3s);
+
+  i {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dark-mode {
+    background-color: $primary-color;
+  }
+
+  &.light-mode {
+    background-color: $text-color-light;
+    color: $primary-color;
+  }
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: $secondary-color;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  @include transition(
+    background-color 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s
+  );
+  border: 2px solid $primary-color;
+  max-height: 400px;
+  overflow: auto;
+
+  &.dark-mode {
+    background-color: $secondary-color;
+    border: 2px solid $primary-color;
+  }
+
+  &.light-mode {
+    background-color: #f9f9f9;
+    border: 2px solid $primary-color;
+  }
+
+  p.light-mode {
+    color: $text-color-light;
+  }
+}
+
+.result-content {
+  max-height: 100%; /* Adjust as needed */
+  overflow: auto;
+}
+
+#copyButton {
+  padding: 8px 16px;
+  background-color: rgba(0, 123, 255, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  @include transition(background-color 0.3s, color 0.3s, transform 0.3s);
+
+  i {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 123, 255, 0.9);
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dark-mode {
+    background-color: rgba(0, 123, 255, 0.7);
+  }
+
+  &.light-mode {
+    background-color: rgba(0, 123, 255, 0.7);
+    color: $text-color-light;
+  }
+}
+
+.error-message {
+  color: $error-color;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: lighten($color: $error-color, $amount: 40%);
+  border-radius: 6px;
+  @include transition(color 0.3s, background-color 0.3s);
+
+  &.dark-mode {
+    color: $error-color;
+    background-color: lighten($color: $error-color, $amount: 20%);
+  }
+
+  &.light-mode {
+    color: $error-color;
+    background-color: lighten($color: $error-color, $amount: 40%);
+  }
+}
+
+.success-message {
+  color: $success-color;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: lighten($color: $success-color, $amount: 40%);
+  border-radius: 6px;
+  @include transition(color 0.3s, background-color 0.3s);
+
+  &.dark-mode {
+    color: $success-color;
+    background-color: lighten($color: $success-color, $amount: 20%);
+  }
+
+  &.light-mode {
+    color: $success-color;
+    background-color: lighten($color: $success-color, $amount: 40%);
+  }
+}
+
+.toggle-and-language-container {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle {
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .slider {
+        background-color: $secondary-color;
+      }
+
+      &:checked + .slider:before {
+        transform: translateX(-25px);
+        background-color: $primary-color;
+      }
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary-color;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 34px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        right: 4px;
+        bottom: 4px;
+        background-color: $tertiary-color;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  #darkModeToggle {
+    display: inline-block;
+    margin-left: 10px;
+
+    &.dark-mode {
+      color: $text-color-dark;
+    }
+
+    &.light-mode {
+      color: $text-color-light;
+    }
+  }
+}
+
+.language-selector {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 10px;
+
+  #languageSelector {
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    background-color: $secondary-color;
+    color: $text-color-dark;
+    @include transition(border-color 0.3s, background-color 0.3s, color 0.3s);
+
+    &.dark-mode {
+      background-color: $secondary-color;
+      color: $text-color-dark;
+    }
+
+    &.light-mode {
+      background-color: $tertiary-color;
+      color: $secondary-color;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+
+    option {
+      background-color: $secondary-color;
+      color: $tertiary-color;
+    }
+  }
+}
+
+.loading-indicator {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid $primary-color;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+  }
+
+  p {
+    margin-left: 10px;
+    color: $primary-color;
+    font-size: 16px;
+
+    &.dark-mode {
+      color: $text-color-dark;
+    }
+
+    &.light-mode {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px; /* Stack buttons vertically with some space between */
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px; /* Space below each input/textarea */
+  }
+
+  .result {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .loadingIndicator {
+    font-size: 14px;
+  }
+
+  .error-message,
+  .success-message {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .dark-mode-toggle {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  textarea,
+  input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .result {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .loadingIndicator {
+    font-size: 12px;
+  }
+
+  .error-message,
+  .success-message {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .dark-mode-toggle {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  textarea,
+  input {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .result {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .loadingIndicator {
+    font-size: 10px;
+  }
+
+  .error-message,
+  .success-message {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .dark-mode-toggle {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .footer {
+    display: none; /* Hide footer on very small screens */
+  }
+}
