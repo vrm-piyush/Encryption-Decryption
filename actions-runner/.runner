@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 2,
-  "agentName": "EncDec",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/gAxQ5Rb2DwNuyUCB1wRGJyYGA3NCqHwuHgiBCsIrBS7A2AKbJQ/",
-  "gitHubUrl": "https://github.com/vrm-piyush/Encryption-Decryption",
-  "workFolder": "_work"
-}
