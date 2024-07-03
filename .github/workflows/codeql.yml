@@ -12,7 +12,7 @@ jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
     runs-on: self-hosted
-    timeout-minutes: 360
+    timeout-minutes: ${{ matrix.timeout }}
     permissions:
       # required for all workflows
       security-events: write
@@ -30,7 +30,7 @@ jobs:
         include:
         - language: javascript-typescript
           build-mode: none
-          os : ubuntu-latest
+          os: ubuntu-latest
           timeout: 360
     
     steps:
@@ -57,4 +57,4 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{ matrix.language }}"
