@@ -12,7 +12,7 @@ jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
     runs-on: self-hosted
-    timeout-minutes: ${{ (matrix.timeout }}
+    timeout-minutes: 360
     permissions:
       # required for all workflows
       security-events: write
