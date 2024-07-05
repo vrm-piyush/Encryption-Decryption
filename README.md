@@ -1,5 +1,7 @@
 # Encryption and Decryption with JavaScript
 
+![encryption decryption](images/image.png)
+
 The Data Encryption and Decryption Tool is a web application developed using JavaScript that provides secure encryption and decryption functionalities using the AES-CBC (Advanced Encryption Standard - Cipher Block Chaining) algorithm. It supports localization using i18next for multi-language support, enhancing usability across different regions. The application ensures data security by implementing PBKDF2 (Password-Based Key Derivation Function 2) for key derivation and AES-CBC for symmetric encryption.
 
 ## Table of Contents
