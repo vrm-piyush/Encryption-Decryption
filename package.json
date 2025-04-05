@@ -1,7 +1,118 @@
 {
+  "author": {
+    "name": "Piyush Verma"
+  },
+  "name": "encryption-decryption",
+  "version": "1.0.1",
+  "description": "Encryption and Decryption App",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.encryption.decryption.app",
+    "productName": "EncryptionDecryption",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "images/favicon.png",
+      "artifactName": "${productName}-Setup.${ext}"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "images/favicon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "images/favicon.ico"
+    },
+    "npmRebuild": false,
+    "electronDownload": {
+      "cache": "./electron-cache"
+    },
+    "fileAssociations": [
+      {
+        "ext": "enc",
+        "name": "Encrypted File",
+        "description": "Encrypted Data File",
+        "role": "Editor"
+      }
+    ],
+    "publish": {
+      "provider": "github",
+      "releaseType": "release"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "appImage": {
+      "license": "LICENSE"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "private": true,
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "dependencies": {
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.1.0"
-  }
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrm-piyush/Encryption-Decryption.git",
+    "homepage":"https://vrm-piyush.github.io/Encryption-Decryption/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "encryption",
+    "decryption",
+    "security",
+    "cryptography",
+    "electron"
+  ]
 }
