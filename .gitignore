@@ -7,6 +7,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # Dependency directories
 jspm_packages/
@@ -41,6 +42,7 @@ jspm_packages/
 # Build directories
 dist/
 build/
+out/
 public/
 
 # Compiled files
@@ -59,7 +61,20 @@ yarn.lock
 coverage/
 
 # Miscellaneous
-*.log
 *.pid
 *.seed
 *.pid.lock
+
+# OS-specific files
+Thumbs.db
+
+# Electron cache/downloads
+electron-cache/
+*.local
+
+# IDE/Editor settings
+
+*.sw?
+
+# Misc
+*.bak
